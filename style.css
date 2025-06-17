@@ -2,6 +2,14 @@
     margin: 10px;
     padding: 10px;
 }
+
+:root {
+    --laranja-claro: #1fbb2f;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #2bda1f;
+}
+
 .body{
     
     font-family: 'Poppins', sans-serif;
@@ -15,22 +23,51 @@
     
 }
 
-
-.cabeçalho-titulo{
-    display: flex;
-    font-size: 75px;
-    color: rgb(22, 135, 7);
+.botao-inicio {
+    background-color: var(--laranja-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
 
 }
 
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
+
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat,
+        url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cabeçalho-titulo{
+    display: flex;
+    font-style: normal;
+    color: rgb(22, 135, 7);
+}
+
 .informações{
-    font-size: 30px;
     border: 5px;
     border-color: aquamarine;
 }
 
 .texto1{
-    font-size: 30px;
     text-align: center;
 }
 
@@ -39,22 +76,16 @@
 }
 
 .texto2{
-    font-size: 30px;
     text-align: justify;
 }
 
 .titulo2{
-    font-size: 50px;
     color: rgb(14, 121, 0);
 }
 .lista{
     text-align: justify;
 }
 
-
-.titulo3{
-    font-size: 35px;
-}
 .formulario button {
     background-color: #CB6D43;
     border: none;
@@ -64,11 +95,8 @@
 .formulario {
     background-color: #ffffff;
     padding: 2rem;
-    /* Espaçamento interno dentro do formulário */
     border-radius: 10px;
-    /* Borda arredondada para o formulário */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Sombra suave para destacar o formulário */
     font-weight: bold;
 }
 
